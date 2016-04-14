@@ -9,7 +9,8 @@
 	function scrap($domain, $pedimento){
 
 		// Post data $pedimento
-		$html  	= file_get_html($domain); 
+		$html  	= file_get_html($domain, $pedimento); 
+		//CURL 
 
 		// Buscas algun elemento unico de la pagina puede ser <table> o un id en especifico
 
